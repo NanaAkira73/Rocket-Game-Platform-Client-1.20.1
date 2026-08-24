@@ -1,0 +1,5 @@
+subscription downloadWorld($gameServerId: String!, $worldId: Int!) {
+    downloadWorld(request: {gameServerId: $gameServerId, worldId: $worldId}) {
+        url
+    }
+}

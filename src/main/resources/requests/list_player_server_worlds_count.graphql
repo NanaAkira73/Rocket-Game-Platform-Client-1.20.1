@@ -1,0 +1,9 @@
+query playerServerWorlds($gameServerId: String!) {
+    playerServer(gameServerId: $gameServerId) {
+        worlds {
+            worlds {
+                worldId
+            }
+        }
+    }
+}

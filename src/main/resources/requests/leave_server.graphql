@@ -1,0 +1,5 @@
+mutation leaveServer($gameServerId: String!) {
+    leaveServer(request: {gameServerId: $gameServerId}) {
+        gameServerId
+    }
+}

@@ -1,0 +1,5 @@
+query modpackFromForeignId($foreignModpackId: String!) {
+    modpackFromForeignId(foreignModpackId: $foreignModpackId) {
+        modpackId
+    }
+}

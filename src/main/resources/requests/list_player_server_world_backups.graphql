@@ -1,0 +1,19 @@
+query playerServerWorldBackups($gameServerId: String!) {
+    playerServer(gameServerId: $gameServerId) {
+        worldId
+        worlds {
+            worlds {
+                worldId
+                worldName
+                backups {
+                    backups {
+                        backupId
+                        done
+                        doneSuccessfully
+                        takenAt
+                    }
+                }
+            }
+        }
+    }
+}

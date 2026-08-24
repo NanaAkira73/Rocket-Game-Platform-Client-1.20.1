@@ -1,0 +1,7 @@
+subscription inviteResponseEvents {
+    inviteResponseEvents {
+        approved
+        gameServerId
+        ownerPlayerId
+    }
+}

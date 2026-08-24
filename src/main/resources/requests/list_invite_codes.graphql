@@ -1,0 +1,8 @@
+query inviteCodes($gameServerId: String!) {
+    inviteCodes(gameServerId: $gameServerId) {
+        inviteCodes {
+            code
+            usesRemaining
+        }
+    }
+}

@@ -1,0 +1,5 @@
+mutation deletePlayerServerWorld($gameServerId: String!, $worldId: Int!, $modpackId: String!, $versionId: String!) {
+    deletePlayerServerWorld(request: {gameServerId: $gameServerId, worldId: $worldId, modpackId: $modpackId, versionId: $versionId}) {
+        worldId
+    }
+}

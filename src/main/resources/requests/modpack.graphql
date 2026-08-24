@@ -1,0 +1,29 @@
+query modpack($modpackId: String!) {
+    modpack(modpackId: $modpackId) {
+        displayName
+        loadouts {
+            autoSelect
+            loadoutId
+            tier
+            displayName
+            description
+            note
+            enabled
+            prices {
+                pricingTier
+                price {
+                    currency
+                    price
+                }
+                iconAsset {
+                    assetKey
+                    downloadUrl
+                }
+            }
+            iconAsset {
+                assetKey
+                downloadUrl
+            }
+        }
+    }
+}

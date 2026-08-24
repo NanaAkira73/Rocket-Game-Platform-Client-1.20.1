@@ -1,0 +1,13 @@
+subscription playerModpackServerCreated {
+    playerModpackServerCreated {
+        gameServerId
+        playerServer {
+            gameServer {
+                info {
+                    ip
+                    port
+                }
+            }
+        }
+    }
+}

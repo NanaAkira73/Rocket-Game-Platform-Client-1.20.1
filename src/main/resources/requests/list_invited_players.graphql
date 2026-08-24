@@ -1,0 +1,8 @@
+query invitedPlayers($gameServerId: String!) {
+    invitedPlayers(gameServerId: $gameServerId) {
+        players {
+            playerId
+            approved
+        }
+    }
+}

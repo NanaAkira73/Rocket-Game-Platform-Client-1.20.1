@@ -1,0 +1,18 @@
+query playerServer($gameServerId: String!) {
+    playerServer(gameServerId: $gameServerId) {
+        gameServerId
+        suspended
+        ownerId
+        gameServer {
+            state
+            info {
+                ip
+                port
+                onlineState {
+                    maxPlayers
+                    playerCount
+                }
+            }
+        }
+    }
+}

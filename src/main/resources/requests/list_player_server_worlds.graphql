@@ -1,0 +1,23 @@
+query playerServerWorlds($gameServerId: String!) {
+    playerServer(gameServerId: $gameServerId) {
+        worldId
+        worlds {
+            worlds {
+                worldId
+                worldName
+                storage {
+                    bytesUsed
+                    bytesMax
+                }
+                modpackId
+                modpack {
+                    displayName
+                }
+            }
+        }
+        selectedWorld {
+            worldId
+            worldName
+        }
+    }
+}

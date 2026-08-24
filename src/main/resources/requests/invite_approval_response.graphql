@@ -1,0 +1,5 @@
+mutation inviteApprovalResponse($gameServerId: String!, $userId: String!, $approved: Boolean!) {
+    inviteApprovalResponse(gameServerId: $gameServerId, userId: $userId, approved: $approved) {
+        found
+    }
+}

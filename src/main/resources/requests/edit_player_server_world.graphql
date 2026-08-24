@@ -1,0 +1,5 @@
+mutation editPlayerServerWorld($gameServerId: String!, $worldId: Int!, $worldName: String!) {
+    editPlayerServerWorld(request: {gameServerId: $gameServerId, worldId: $worldId, worldName: $worldName}) {
+        worldId
+    }
+}

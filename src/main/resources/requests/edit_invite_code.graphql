@@ -1,0 +1,5 @@
+mutation editInviteCode($gameServerId: String!, $code: String!, $usesRemaining: Int!) {
+    editInviteCode(request: {gameServerId: $gameServerId, code: $code, usesRemaining: $usesRemaining}) {
+        code
+    }
+}

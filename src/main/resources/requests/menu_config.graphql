@@ -1,0 +1,5 @@
+query menuConfig($clientVersionId: Int!) {
+    menuConfig(clientVersionId: $clientVersionId) {
+        downloadUrls
+    }
+}

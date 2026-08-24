@@ -1,0 +1,8 @@
+subscription inviteRequestEvents {
+    inviteRequestEvents {
+        approved
+        code
+        gameServerId
+        sentFromPlayerId
+    }
+}

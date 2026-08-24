@@ -1,0 +1,11 @@
+query modpackRegions {
+    modpackRegions(filter: {purchasable: null}) {
+        regionId
+        displayName
+        purchasable
+        iconAsset {
+            assetKey
+            downloadUrl
+        }
+    }
+}
