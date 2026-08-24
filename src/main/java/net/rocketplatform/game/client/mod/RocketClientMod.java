@@ -2,6 +2,7 @@ package net.rocketplatform.game.client.mod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.fml.common.Mod;
+import net.rocketplatform.game.client.mod.ui.kubeui.RGPClientKubeJSPlugin;
 import org.slf4j.Logger;
 
 @Mod(Constants.MOD_ID)
@@ -12,6 +13,7 @@ public class RocketClientMod {
     public RocketClientMod() {
         instance = this;
         LOGGER.info("Rocket Game Platform Client loaded");
+        RGPClientKubeJSPlugin.init();
     }
 
     public static RocketClientMod getInstance() {
