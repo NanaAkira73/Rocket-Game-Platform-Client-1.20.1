@@ -1,0 +1,46 @@
+{
+  "mappings": {
+    "net/rocketplatform/game/client/mod/mixin/MinecraftMixin": {
+      "<init>(Lnet/minecraft/client/main/GameConfig;)V": "Lnet/minecraft/client/Minecraft;<init>(Lnet/minecraft/client/main/GameConfig;)V",
+      "Lnet/minecraft/client/renderer/GameRenderer;preloadUiShader(Lnet/minecraft/server/packs/resources/ResourceProvider;)V": "Lnet/minecraft/client/renderer/GameRenderer;m_172722_(Lnet/minecraft/server/packs/resources/ResourceProvider;)V"
+    },
+    "net/rocketplatform/game/client/mod/mixin/WorldConnectionMixin": {
+      "channelActive": "Lnet/minecraft/network/Connection;channelActive(Lio/netty/channel/ChannelHandlerContext;)V",
+      "disconnect": "Lnet/minecraft/network/Connection;m_129507_(Lnet/minecraft/network/chat/Component;)V"
+    },
+    "net/rocketplatform/game/client/mod/mixin/screen/PauseScreenMixin": {
+      "()Lnet/minecraft/client/gui/screens/TitleScreen;": "()Lnet/minecraft/client/gui/screens/TitleScreen;",
+      "createPauseMenu": "Lnet/minecraft/client/gui/screens/PauseScreen;m_96338_()V",
+      "method_19836": "Lnet/minecraft/client/gui/screens/PauseScreen;m_96314_(Lnet/minecraft/client/gui/components/Button;)V"
+    },
+    "net/rocketplatform/game/client/mod/mixin/screen/ServerSelectionListMixin": {
+      "refreshEntries": "Lnet/minecraft/client/gui/screens/multiplayer/ServerSelectionList;m_99780_()V"
+    },
+    "net/rocketplatform/game/client/mod/mixin/screen/TitleScreenMixin": {
+      "init": "Lnet/minecraft/client/gui/screens/TitleScreen;m_7856_()V"
+    }
+  },
+  "data": {
+    "searge": {
+      "net/rocketplatform/game/client/mod/mixin/MinecraftMixin": {
+        "<init>(Lnet/minecraft/client/main/GameConfig;)V": "Lnet/minecraft/client/Minecraft;<init>(Lnet/minecraft/client/main/GameConfig;)V",
+        "Lnet/minecraft/client/renderer/GameRenderer;preloadUiShader(Lnet/minecraft/server/packs/resources/ResourceProvider;)V": "Lnet/minecraft/client/renderer/GameRenderer;m_172722_(Lnet/minecraft/server/packs/resources/ResourceProvider;)V"
+      },
+      "net/rocketplatform/game/client/mod/mixin/WorldConnectionMixin": {
+        "channelActive": "Lnet/minecraft/network/Connection;channelActive(Lio/netty/channel/ChannelHandlerContext;)V",
+        "disconnect": "Lnet/minecraft/network/Connection;m_129507_(Lnet/minecraft/network/chat/Component;)V"
+      },
+      "net/rocketplatform/game/client/mod/mixin/screen/PauseScreenMixin": {
+        "()Lnet/minecraft/client/gui/screens/TitleScreen;": "()Lnet/minecraft/client/gui/screens/TitleScreen;",
+        "createPauseMenu": "Lnet/minecraft/client/gui/screens/PauseScreen;m_96338_()V",
+        "method_19836": "Lnet/minecraft/client/gui/screens/PauseScreen;m_96314_(Lnet/minecraft/client/gui/components/Button;)V"
+      },
+      "net/rocketplatform/game/client/mod/mixin/screen/ServerSelectionListMixin": {
+        "refreshEntries": "Lnet/minecraft/client/gui/screens/multiplayer/ServerSelectionList;m_99780_()V"
+      },
+      "net/rocketplatform/game/client/mod/mixin/screen/TitleScreenMixin": {
+        "init": "Lnet/minecraft/client/gui/screens/TitleScreen;m_7856_()V"
+      }
+    }
+  }
+}

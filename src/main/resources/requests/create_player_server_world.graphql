@@ -1,0 +1,9 @@
+mutation createPlayerServerWorld($gameServerId: String!, $worldName: String, $modpackId: String!, $versionId: String!) {
+    createPlayerServerWorld(request: {gameServerId: $gameServerId, worldName: $worldName, modpackId: $modpackId, versionId: $versionId}) {
+        world {
+            worldId
+            worldName
+        }
+        error
+    }
+}

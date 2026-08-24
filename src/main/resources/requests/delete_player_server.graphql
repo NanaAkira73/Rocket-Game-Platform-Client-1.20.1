@@ -1,0 +1,5 @@
+mutation deletePlayerServer($gameServerId: String!) {
+    deletePlayerServer(request: {gameServerId: $gameServerId}) {
+        gameServerId
+    }
+}

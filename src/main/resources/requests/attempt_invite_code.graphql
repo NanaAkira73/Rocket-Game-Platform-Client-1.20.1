@@ -1,0 +1,8 @@
+mutation attemptInviteCode($code: String!) {
+    attemptInviteCode(code: $code) {
+        found
+        owner
+        sentPreviously
+        sent
+    }
+}

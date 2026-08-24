@@ -1,0 +1,52 @@
+query playerServers {
+    playerServers(ownedServers: null) {
+        servers {
+            gameServerId
+            modpackId
+            ownerId
+            suspended
+            regionId
+            loadoutId
+            loadout {
+                maxWorldSlots
+            }
+            serverName
+            selectedWorld {
+                worldName
+            }
+            worlds {
+                worlds {
+                    worldId
+                }
+            }
+            gameServer {
+                state
+                info {
+                    ip
+                    port
+                    onlineState {
+                        playerCount
+                        maxPlayers
+                    }
+                }
+            }
+            modpack {
+                displayName
+            }
+        }
+        clientContext {
+            ... on BoolContextValue {
+                key
+                boolValue
+            }
+            ... on IntContextValue {
+                key
+                intValue
+            }
+            ... on StringContextValue {
+                key
+                stringValue
+            }
+        }
+    }
+}

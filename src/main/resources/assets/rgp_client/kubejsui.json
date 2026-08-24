@@ -1,0 +1,5 @@
+{
+  "actions": {
+    "ftb_worlds": "net.rocketplatform.game.client.mod.ui.kubeui.KubeUIActions.FTB_WORLDS"
+  }
+}

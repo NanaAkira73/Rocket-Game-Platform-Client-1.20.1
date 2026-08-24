@@ -1,0 +1,6 @@
+query assets($assets: [String!]!) {
+    assets(assets: $assets) {
+        assetKey
+        downloadUrl
+    }
+}

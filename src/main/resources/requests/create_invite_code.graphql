@@ -1,0 +1,5 @@
+mutation createInviteCode($gameServerId: String!, $uses: Int!, $autoAccept: Boolean!) {
+    createInviteCode(gameServerId: $gameServerId, uses: $uses, autoAccept: $autoAccept) {
+        code
+    }
+}

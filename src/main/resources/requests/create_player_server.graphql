@@ -1,0 +1,15 @@
+mutation createPlayerServer($modpackId: String!, $version: String!) {
+    createPlayerServer(request: {loadoutId: "basic", modpackId: $modpackId, regionId: "EU", versionId: $version, start: true}) {
+        gameServerId
+        ownerId
+        suspended
+        regionId
+        gameServer {
+            state
+            info {
+                ip
+                port
+            }
+        }
+    }
+}
