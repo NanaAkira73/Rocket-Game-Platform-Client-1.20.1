@@ -12,13 +12,13 @@ public class KubeUIActions {
         Minecraft.getInstance().setScreen(new ConfirmScreen(
             accepted -> {
                 if (accepted) {
-                    // Open FTB Worlds - placeholder
+                    // Open FTB Worlds
                 }
                 Minecraft.getInstance().setScreen(screen);
             },
             Component.literal("FTB Worlds"),
             Component.literal("FTB Worlds feature is being ported to 1.20.1"),
-            Component.literal("OK"),
+            Component.literal("Open"),
             Component.literal("Cancel")
         ));
     };

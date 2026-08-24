@@ -1,0 +1,17 @@
+{
+    "required": true,
+    "package": "net.rocketplatform.game.client.mod.mixin",
+    "compatibilityLevel": "JAVA_17",
+    "refmap": "rgp_client.refmap.json",
+    "client": [
+        "MinecraftMixin",
+        "WorldConnectionMixin",
+        "ext.BaseScreenMixin",
+        "screen.TitleScreenMixin",
+        "screen.PauseScreenMixin",
+        "screen.ServerSelectionListMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
