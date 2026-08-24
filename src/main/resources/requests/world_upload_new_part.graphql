@@ -1,0 +1,5 @@
+mutation worldUploadNewPart($gameServerId: String!, $worldUploadId: String!) {
+    worldUploadNewPart(request: {gameServerId: $gameServerId, worldUploadId: $worldUploadId}) {
+        uploadUrl
+    }
+}

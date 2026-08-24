@@ -1,0 +1,5 @@
+mutation switchPlayerServerWorld($gameServerId: String!, $worldId: Int!) {
+    switchPlayerServerWorld(gameServerId: $gameServerId, worldId: $worldId) {
+        worldId
+    }
+}

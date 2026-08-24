@@ -1,0 +1,19 @@
+query supportedVersion($modpackId: String!, $versionId: String!) {
+    supportedVersion(modpackId: $modpackId, versionId: $versionId) {
+        versionSupported
+        clientContext {
+            ... on BoolContextValue {
+                key
+                boolValue
+            }
+            ... on IntContextValue {
+                key
+                intValue
+            }
+            ... on StringContextValue {
+                key
+                stringValue
+            }
+        }
+    }
+}

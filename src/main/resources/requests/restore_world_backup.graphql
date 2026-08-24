@@ -1,0 +1,5 @@
+mutation restoreWorldBackup($gameServerId: String!, $worldId: Int!, $backupId: String!) {
+    restoreWorldBackup(request: {gameServerId: $gameServerId, worldId: $worldId, backupId: $backupId}) {
+        worldId
+    }
+}

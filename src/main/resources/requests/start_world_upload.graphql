@@ -1,0 +1,6 @@
+mutation startWorldUpload($gameServerId: String!, $worldId: Int!) {
+    startWorldUpload(request: {gameServerId: $gameServerId, worldId: $worldId, multipart: true}) {
+        worldUploadId
+        uploadUrl
+    }
+}

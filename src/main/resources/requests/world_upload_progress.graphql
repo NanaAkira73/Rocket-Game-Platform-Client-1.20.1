@@ -1,0 +1,5 @@
+mutation worldUploadProgress($gameServerId: String!, $worldUploadId: String!, $progress: WorldUploadProgress!, $uploadedParts: [WorldUploadProgressUploadedPartInput!]) {
+    worldUploadProgress(request: {gameServerId: $gameServerId, worldUploadId: $worldUploadId, progress: $progress, uploadedParts: $uploadedParts}) {
+        worldUploadId
+    }
+}

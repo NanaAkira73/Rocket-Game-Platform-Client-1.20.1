@@ -1,0 +1,12 @@
+mutation startPlayerServer($gameServerId: String!, $versionId: String!) {
+    startPlayerServer(request: {gameServerId: $gameServerId, versionId: $versionId}) {
+        error
+        server {
+            versionId
+            ownerId
+            gameServer {
+                state
+            }
+        }
+    }
+}

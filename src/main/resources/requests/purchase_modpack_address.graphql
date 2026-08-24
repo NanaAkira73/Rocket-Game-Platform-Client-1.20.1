@@ -1,0 +1,12 @@
+query purchaseModpackAddress($modpackId: String!, $versionId: String!, $loadoutId: String!, $regionId: String!, $pricingTier: ModpackLoadoutPricingTier!, $gameServerId: String) {
+    purchaseModpackAddress(purchaseRequest: {
+        modpackId: $modpackId,
+        loadoutId: $loadoutId,
+        versionId: $versionId,
+        regionId: $regionId,
+        pricingTier: $pricingTier,
+        gameServerId: $gameServerId
+    }) {
+        url
+    }
+}

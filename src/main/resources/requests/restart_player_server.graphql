@@ -1,0 +1,10 @@
+mutation restartPlayerServer($gameServerId: String!, $versionId: String!) {
+    restartPlayerServer(request: {gameServerId: $gameServerId, versionId: $versionId}) {
+        error
+        server {
+            gameServer {
+                state
+            }
+        }
+    }
+}

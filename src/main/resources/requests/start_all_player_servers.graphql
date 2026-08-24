@@ -1,0 +1,19 @@
+mutation startAllPlayerServers($modpackId: String!, $versionId: String!) {
+    startAllPlayerServers(request: {modpackId: $modpackId, versionId: $versionId, filter: {}}) {
+        versionSupported
+        clientContext {
+            ... on BoolContextValue {
+                key
+                boolValue
+            }
+            ... on IntContextValue {
+                key
+                intValue
+            }
+            ... on StringContextValue {
+                key
+                stringValue
+            }
+        }
+    }
+}

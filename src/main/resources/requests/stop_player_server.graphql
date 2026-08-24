@@ -1,0 +1,5 @@
+mutation stopPlayerServer($gameServerId: String!) {
+    stopPlayerServer(request: {gameServerId: $gameServerId}) {
+        gameServerId
+    }
+}

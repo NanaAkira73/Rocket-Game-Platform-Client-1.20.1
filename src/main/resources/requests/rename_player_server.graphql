@@ -1,0 +1,5 @@
+mutation renamePlayerServer($gameServerId: String!, $serverName: String!) {
+    renamePlayerServer(request: {gameServerId: $gameServerId, serverName: $serverName}) {
+        gameServerId
+    }
+}
