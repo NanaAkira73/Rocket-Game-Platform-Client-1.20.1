@@ -1,6 +1,7 @@
 package net.rocketplatform.game.client.mod.util.gson;
 
 import com.google.gson.*;
+import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.*;
 
 import java.io.IOException;
