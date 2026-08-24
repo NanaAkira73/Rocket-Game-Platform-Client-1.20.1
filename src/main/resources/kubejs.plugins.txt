@@ -1,0 +1,1 @@
+net.rocketplatform.game.client.mod.ui.kubeui.RGPClientKubeJSPlugin client kubejs

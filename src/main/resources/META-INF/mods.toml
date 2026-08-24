@@ -1,0 +1,12 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="rgp_client"
+version="2001.1.0"
+displayName="Rocket Game Platform Client"
+authors="FTB Team"
+description='''
+Rocket Game Platform Client - Ported to 1.20.1
+'''
