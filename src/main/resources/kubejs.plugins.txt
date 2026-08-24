@@ -1,1 +1,1 @@
-# KubeJS integration via reflection - no compile-time dependency needed
+net.rocketplatform.game.client.mod.ui.kubeui.RGPClientKubeJSPlugin client kubejs

@@ -40,6 +40,9 @@ minecraft {
 }
 
 repositories {
+    flatDir {
+        dirs 'libs'
+    }
     maven {
         url "https://maven.architectury.dev/"
     }
@@ -53,6 +56,7 @@ repositories {
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+    implementation fg.deobf("dev.latvian.mods:kubejs-forge:2001.6.5-build.1")
 }
 
 tasks.named('processResources', ProcessResources).configure {
